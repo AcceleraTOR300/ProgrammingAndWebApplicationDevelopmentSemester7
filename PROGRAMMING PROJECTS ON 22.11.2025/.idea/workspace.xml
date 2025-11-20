@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39b2c065-8a0c-47ba-a6a2-1df6a3812dd2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="35kyD7c9EzdtZWyFjPACQ6ieLlS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Balloon.executor": "Run",
+    "Application.Microwave.executor": "Run",
+    "Application.RoachSimulation.executor": "Run",
+    "Application.StudentTester.executor": "Run",
+    "Application.VotingMachineTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "D:/Курсы/Программирование и разработка веб-приложений/PROGRAMMING PROJECTS ON 22.11.2025/src/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Курсы\Программирование и разработка веб-приложений\PROGRAMMING PROJECTS ON 22.11.2025\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.VotingMachineTest">
+    <configuration name="Balloon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Balloon" />
+      <module name="PROGRAMMING PROJECTS ON 22.11.2025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Microwave" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Microwave" />
+      <module name="PROGRAMMING PROJECTS ON 22.11.2025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoachSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RoachSimulation" />
+      <module name="PROGRAMMING PROJECTS ON 22.11.2025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StudentTester" />
+      <module name="PROGRAMMING PROJECTS ON 22.11.2025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VotingMachineTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VotingMachineTest" />
+      <module name="PROGRAMMING PROJECTS ON 22.11.2025" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VotingMachineTest" />
+        <item itemvalue="Application.StudentTester" />
+        <item itemvalue="Application.RoachSimulation" />
+        <item itemvalue="Application.Microwave" />
+        <item itemvalue="Application.Balloon" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39b2c065-8a0c-47ba-a6a2-1df6a3812dd2" name="Changes" comment="" />
+      <created>1763668243601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763668243601</updated>
+    </task>
+    <servers />
+  </component>
+</project>
