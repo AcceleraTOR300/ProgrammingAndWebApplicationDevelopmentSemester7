@@ -21,6 +21,7 @@ public class Car
      */
     public void addGas(double amount)
     {
+
         gasInTank = gasInTank + amount;
     }
 
@@ -29,6 +30,7 @@ public class Car
      */
     public double getGasInTank()
     {
+
         return gasInTank;
     }
 

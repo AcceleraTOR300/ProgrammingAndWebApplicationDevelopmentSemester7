@@ -10,6 +10,7 @@ public class Moth
      */
     public Moth(double initialPosition)
     {
+
         position = initialPosition;
     }
 
@@ -19,6 +20,7 @@ public class Moth
      */
     public void moveToLight(double lightPosition)
     {
+
         position = (position + lightPosition) / 2;
     }
 
@@ -27,6 +29,7 @@ public class Moth
      */
     public double getPosition()
     {
+
         return position;
     }
 }

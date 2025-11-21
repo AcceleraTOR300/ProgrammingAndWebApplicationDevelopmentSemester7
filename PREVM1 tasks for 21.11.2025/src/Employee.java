@@ -20,6 +20,7 @@ public class Employee
      */
     public String getName()
     {
+
         return name;
     }
 
@@ -28,6 +29,7 @@ public class Employee
      */
     public double getSalary()
     {
+
         return salary;
     }
 

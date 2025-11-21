@@ -10,6 +10,7 @@ public class Counter
      */
     public Counter(int initialValue)
     {
+
         value = initialValue;
     }
 
@@ -18,6 +19,7 @@ public class Counter
      */
     public void click()
     {
+
         value = value + 1;
     }
 
@@ -27,6 +29,7 @@ public class Counter
      */
     public void undo()
     {
+
         value = Math.max(value - 1, 0);
     }
 
@@ -35,6 +38,7 @@ public class Counter
      */
     public int getValue()
     {
+
         return value;
     }
 }

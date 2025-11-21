@@ -10,6 +10,7 @@ public class BankAccount
      */
     public BankAccount(double initialBalance)
     {
+
         balance = initialBalance;
     }
 
@@ -18,6 +19,7 @@ public class BankAccount
      */
     public void deposit(double amount)
     {
+
         balance = balance + amount;
     }
 
@@ -26,6 +28,7 @@ public class BankAccount
      */
     public void withdraw(double amount)
     {
+
         balance = balance - amount;
     }
 

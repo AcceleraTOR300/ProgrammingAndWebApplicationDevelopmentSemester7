@@ -28,6 +28,7 @@ public class VotingMachine
      * Добавляет голос за демократа.
      */
     public void voteForDemocrat()
+
     {
         democratVotes = democratVotes + 1;
     }
@@ -37,6 +38,7 @@ public class VotingMachine
      */
     public void voteForRepublican()
     {
+
         republicanVotes = republicanVotes + 1;
     }
 
@@ -45,6 +47,7 @@ public class VotingMachine
      */
     public int getDemocratVotes()
     {
+
         return democratVotes;
     }
 
@@ -53,6 +56,7 @@ public class VotingMachine
      */
     public int getRepublicanVotes()
     {
+
         return republicanVotes;
     }
 }

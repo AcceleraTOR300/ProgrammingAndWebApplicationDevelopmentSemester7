@@ -24,6 +24,7 @@ public class RangeInput
      */
     public void up()
     {
+
         value = Math.min(value + 1, maxLimit);
     }
 
@@ -33,6 +34,7 @@ public class RangeInput
      */
     public void down()
     {
+
         value = Math.max(value - 1, minLimit);
     }
 
@@ -41,6 +43,7 @@ public class RangeInput
      */
     public int getValue()
     {
+
         return value;
     }
 
@@ -49,6 +52,7 @@ public class RangeInput
      */
     public int getMin()
     {
+
         return minLimit;
     }
 
@@ -57,6 +61,7 @@ public class RangeInput
      */
     public int getMax()
     {
+
         return maxLimit;
     }
 }

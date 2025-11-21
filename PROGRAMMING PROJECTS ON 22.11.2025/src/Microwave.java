@@ -20,6 +20,7 @@ public class Microwave
      */
     public void addTime()
     {
+
         timeSeconds = timeSeconds + 30;
     }
 
@@ -52,6 +53,7 @@ public class Microwave
      */
     public void start()
     {
+
         System.out.println("Готовилось за " + timeSeconds + " секунд на уровне " + powerLevel);
     }
 

@@ -29,6 +29,7 @@ public class Bug
      */
     public void move()
     {
+
         position = position + direction;
     }
 
@@ -37,6 +38,7 @@ public class Bug
      */
     public int getPosition()
     {
+
         return position;
     }
 }

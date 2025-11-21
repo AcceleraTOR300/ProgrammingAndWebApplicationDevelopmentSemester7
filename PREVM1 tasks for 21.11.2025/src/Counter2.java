@@ -20,6 +20,7 @@ public class Counter2
      */
     public void setLimit(int maximum)
     {
+
         limit = maximum;
     }
 
@@ -40,6 +41,7 @@ public class Counter2
      */
     public int getValue()
     {
+
         return value;
     }
 
@@ -48,6 +50,7 @@ public class Counter2
      */
     public int getLimit()
     {
+
         return limit;
     }
 }

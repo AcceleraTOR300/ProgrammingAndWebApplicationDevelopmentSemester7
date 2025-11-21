@@ -20,6 +20,7 @@ public class Product
      */
     public String getName()
     {
+
         return name;
     }
 
@@ -36,6 +37,7 @@ public class Product
      */
     public void reducePrice(double amount)
     {
+
         price = price - amount;
     }
 }

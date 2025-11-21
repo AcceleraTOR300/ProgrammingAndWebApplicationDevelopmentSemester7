@@ -10,6 +10,7 @@ public class RoachPopulation
      */
     public RoachPopulation(int initialPopulation)
     {
+
         roachCount = initialPopulation;
     }
 
@@ -18,6 +19,7 @@ public class RoachPopulation
      */
     public void breed()
     {
+
         roachCount = roachCount * 2;
     }
 
@@ -26,6 +28,7 @@ public class RoachPopulation
      */
     public void spray(double percent)
     {
+
         roachCount = roachCount - (int)(roachCount * percent / 100);
     }
 
@@ -34,6 +37,7 @@ public class RoachPopulation
      */
     public int getRoaches()
     {
+
         return roachCount;
     }
 }

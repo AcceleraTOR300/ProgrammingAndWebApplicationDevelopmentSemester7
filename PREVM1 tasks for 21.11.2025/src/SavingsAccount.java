@@ -20,6 +20,7 @@ public class SavingsAccount
      */
     public void deposit(double amount)
     {
+
         balance = balance + amount;
     }
 
@@ -28,6 +29,7 @@ public class SavingsAccount
      */
     public void withdraw(double amount)
     {
+
         balance = balance - amount;
     }
 
@@ -36,6 +38,7 @@ public class SavingsAccount
      */
     public double getBalance()
     {
+
         return balance;
     }
 
@@ -44,6 +47,7 @@ public class SavingsAccount
      */
     public double getInterestRate()
     {
+
         return interest;
     }
 

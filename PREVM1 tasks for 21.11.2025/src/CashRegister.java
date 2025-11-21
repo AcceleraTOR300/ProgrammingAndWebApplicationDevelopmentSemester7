@@ -5,8 +5,8 @@ public class CashRegister
 {
     private double purchase;
     private double payment;
-    private double salesTotal;      // Новое: общая сумма всех продаж
-    private int salesCount;         // Новое: количество продаж
+    private double salesTotal;
+    private int salesCount;
 
     /**
      * Конструктор создаёт кассовый регистр.

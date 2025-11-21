@@ -22,6 +22,7 @@ public class Letter
      */
     public void addLine(String line)
     {
+
         body = body + line + "\n";
     }
 

@@ -22,6 +22,7 @@ public class HallwayLighting
      */
     public int getFirstSwitchState()
     {
+
         return firstSwitchState;
     }
 
@@ -30,6 +31,7 @@ public class HallwayLighting
      */
     public int getSecondSwitchState()
     {
+
         return secondSwitchState;
     }
 
@@ -38,6 +40,7 @@ public class HallwayLighting
      */
     public int getLampState()
     {
+
         return lampState;
     }
 
