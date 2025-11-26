@@ -1,50 +1,41 @@
 /**
  * Класс банковского счёта.
  */
-public class BankAccount
-{
+public class BankAccount {
     private double balance;
 
     /**
      * Конструктор создаёт банковский счёт с начальным балансом.
      */
-    public BankAccount(double initialBalance)
-    {
-
+    public BankAccount(double initialBalance) {
         balance = initialBalance;
     }
 
     /**
-     * Вносит деньги на счёт.
+     * Метод для пополнения баланса
      */
-    public void deposit(double amount)
-    {
-
+    public void deposit(double amount) {
         balance = balance + amount;
     }
 
     /**
      * Снимает деньги со счёта.
      */
-    public void withdraw(double amount)
-    {
-
+    public void withdraw(double amount) {
         balance = balance - amount;
     }
 
     /**
      * Возвращает текущий баланс счёта.
      */
-    public double getBalance()
-    {
+    public double getBalance() {
         return balance;
     }
 
     /**
      * Добавляет проценты на счёт.
      */
-    public void addInterest(double rate)
-    {
+    public void addInterest(double rate) {
         double interestAmount = balance * rate / 100;
         balance = balance + interestAmount;
     }
@@ -53,10 +44,8 @@ public class BankAccount
 /**
  * Задание 7: Класс для тестирования банковского счёта.
  */
-class BankAccountTester7
-{
-    public static void main(String[] args)
-    {
+class BankAccountTester7 {
+    public static void main(String[] args) {
         System.out.println("=== Задание 7: Тестирование BankAccount ===\n");
 
         BankAccount account = new BankAccount(0);
@@ -80,10 +69,8 @@ class BankAccountTester7
 /**
  * Задание 8: Класс для тестирования с методом addInterest.
  */
-class BankAccountTester8
-{
-    public static void main(String[] args)
-    {
+class BankAccountTester8 {
+    public static void main(String[] args) {
         System.out.println("=== Задание 8: Тестирование addInterest ===\n");
 
         System.out.println("Пример 1:");

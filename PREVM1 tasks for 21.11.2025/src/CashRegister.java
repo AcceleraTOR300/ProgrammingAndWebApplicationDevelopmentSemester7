@@ -1,8 +1,7 @@
 /**
  * Класс кассового регистра для обработки продаж.
  */
-public class CashRegister
-{
+public class CashRegister {
     private double purchase;
     private double payment;
     private double salesTotal;
@@ -11,8 +10,7 @@ public class CashRegister
     /**
      * Конструктор создаёт кассовый регистр.
      */
-    public CashRegister()
-    {
+    public CashRegister() {
         purchase = 0;
         payment = 0;
         salesTotal = 0;
@@ -22,24 +20,21 @@ public class CashRegister
     /**
      * Записывает покупку товара.
      */
-    public void recordPurchase(double amount)
-    {
+    public void recordPurchase(double amount) {
         purchase = purchase + amount;
     }
 
     /**
      * Получает платёж от покупателя.
      */
-    public void receivePayment(double amount)
-    {
+    public void receivePayment(double amount) {
         payment = payment + amount;
     }
 
     /**
      * Вычисляет сдачу и сбрасывает счёт для следующего покупателя.
      */
-    public double giveChange()
-    {
+    public double giveChange() {
         double change = payment - purchase;
 
         // Добавляем текущую продажу к итогам
@@ -55,8 +50,7 @@ public class CashRegister
      * Печатает чек со всеми товарами и итоговой суммой.
      * Задание 10.
      */
-    public void printReceipt()
-    {
+    public void printReceipt() {
         System.out.println("=== ЧЕК ===");
         System.out.println("Сумма к оплате: $" + String.valueOf(purchase));
         System.out.println("================");
@@ -66,8 +60,7 @@ public class CashRegister
      * Возвращает общую сумму всех продаж за день.
      * Задание 11.
      */
-    public double getSalesTotal()
-    {
+    public double getSalesTotal() {
         return salesTotal;
     }
 
@@ -75,8 +68,7 @@ public class CashRegister
      * Возвращает количество совершённых продаж за день.
      * Задание 11.
      */
-    public int getSalesCount()
-    {
+    public int getSalesCount() {
         return salesCount;
     }
 
@@ -84,8 +76,7 @@ public class CashRegister
      * Сбрасывает все счётчики для начала нового дня.
      * Задание 11.
      */
-    public void reset()
-    {
+    public void reset() {
         purchase = 0;
         payment = 0;
         salesTotal = 0;
@@ -96,10 +87,8 @@ public class CashRegister
 /**
  * Класс для тестирования CashRegister (Задания 10 и 11).
  */
-class CashRegisterTester
-{
-    public static void main(String[] args)
-    {
+class CashRegisterTester {
+    public static void main(String[] args) {
         System.out.println("=== Задание 10: Тестирование printReceipt ===\n");
 
         CashRegister register1 = new CashRegister();

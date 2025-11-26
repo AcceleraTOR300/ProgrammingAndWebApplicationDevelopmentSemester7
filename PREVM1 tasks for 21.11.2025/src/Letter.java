@@ -1,8 +1,7 @@
 /**
  * Задание 15, класс, который участвует для написания простого письма.
  */
-public class Letter
-{
+public class Letter {
     private String from;
     private String to;
     private String body;
@@ -10,8 +9,7 @@ public class Letter
     /**
      * Конструктор создаёт письмо с указанными отправителем и получателем.
      */
-    public Letter(String sender, String recipient)
-    {
+    public Letter(String sender, String recipient) {
         from = sender;
         to = recipient;
         body = "";
@@ -20,8 +18,7 @@ public class Letter
     /**
      * Добавляет строку текста к телу письма.
      */
-    public void addLine(String line)
-    {
+    public void addLine(String line) {
 
         body = body + line + "\n";
     }
@@ -29,8 +26,7 @@ public class Letter
     /**
      * Возвращает полное письмо в соответствии с шаблоном.
      */
-    public String getText()
-    {
+    public String getText() {
         return "Dear " + to + ":\n" +
                 "\n" +
                 body +
@@ -44,10 +40,8 @@ public class Letter
 /**
  * Класс для создания и печати письма.
  */
-class LetterPrinter
-{
-    public static void main(String[] args)
-    {
+class LetterPrinter {
+    public static void main(String[] args) {
         Letter letter = new Letter("Mary", "John");
 
         letter.addLine("I am sorry we must part.");

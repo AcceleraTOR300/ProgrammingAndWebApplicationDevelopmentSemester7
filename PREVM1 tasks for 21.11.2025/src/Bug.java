@@ -1,8 +1,7 @@
 /**
  * Задание 16, класс, в котором, для моделирования жука, движущегося по горизонтальной линии.
  */
-public class Bug
-{
+public class Bug {
     private int position;
     private int direction; // 1 для вправо, -1 для влево
 
@@ -10,8 +9,7 @@ public class Bug
      * Конструктор создаёт жука с начальной позицией.
      * Изначально жук движется вправо.
      */
-    public Bug(int initialPosition)
-    {
+    public Bug(int initialPosition) {
         position = initialPosition;
         direction = 1;
     }
@@ -19,25 +17,21 @@ public class Bug
     /**
      * Разворачивает жука (меняет направление).
      */
-    public void turn()
-    {
+    public void turn() {
         direction = -direction;
     }
 
     /**
      * Перемещает жука на одну единицу в текущем направлении.
      */
-    public void move()
-    {
-
+    public void move() {
         position = position + direction;
     }
 
     /**
      * Возвращает текущую позицию жука.
      */
-    public int getPosition()
-    {
+    public int getPosition() {
 
         return position;
     }
@@ -46,10 +40,8 @@ public class Bug
 /**
  * Класс для тестирования класса Bug.
  */
-class BugTester
-{
-    public static void main(String[] args)
-    {
+class BugTester {
+    public static void main(String[] args) {
         System.out.println("=== Задание 16: Тестирование класса Bug ===\n");
 
 
@@ -109,7 +101,6 @@ class BugTester
         bug3.turn();
         bug3.move();
         System.out.println("После turn и move (влево): " + bug3.getPosition() + " (ожидается 10)");
-
 
 
     }

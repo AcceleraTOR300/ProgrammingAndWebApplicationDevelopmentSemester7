@@ -1,8 +1,7 @@
 /**
  * Задание 4, в котором класс моделирует систему управления освещением коридора с двумя выключателями на обоих концах.
  */
-public class HallwayLighting
-{
+public class HallwayLighting {
     private int firstSwitchState;
     private int secondSwitchState;
     private int lampState;
@@ -10,8 +9,7 @@ public class HallwayLighting
     /**
      * Конструктор создаёт систему с обоими выключателями в положении down и выключенной лампой.
      */
-    public HallwayLighting()
-    {
+    public HallwayLighting() {
         firstSwitchState = 0;
         secondSwitchState = 0;
         lampState = 0;
@@ -20,27 +18,21 @@ public class HallwayLighting
     /**
      * Возвращает состояние первого выключателя.
      */
-    public int getFirstSwitchState()
-    {
-
+    public int getFirstSwitchState() {
         return firstSwitchState;
     }
 
     /**
      * Возвращает состояние второго выключателя.
      */
-    public int getSecondSwitchState()
-    {
-
+    public int getSecondSwitchState() {
         return secondSwitchState;
     }
 
     /**
      * Возвращает состояние лампы.
      */
-    public int getLampState()
-    {
-
+    public int getLampState() {
         return lampState;
     }
 
@@ -49,8 +41,7 @@ public class HallwayLighting
      * Логика вот в чём:если оба выключателя в одинаковом состоянии, свет выключен,
      * если в разных состояниях, свет включен.
      */
-    public void toggleFirstSwitch()
-    {
+    public void toggleFirstSwitch() {
         // Переключаем выключатель
         firstSwitchState = 1 - firstSwitchState;
 
@@ -61,8 +52,7 @@ public class HallwayLighting
     /**
      * Переключает второй выключатель и обновляет состояние лампы.
      */
-    public void toggleSecondSwitch()
-    {
+    public void toggleSecondSwitch() {
         // Переключаем выключатель
         secondSwitchState = 1 - secondSwitchState;
 
@@ -75,14 +65,10 @@ public class HallwayLighting
      * Лампа включена (1), если выключатели в разных положениях,
      * лампа выключена (0), если в одинаковых положениях.
      */
-    private void updateLampState()
-    {
-        if (firstSwitchState == secondSwitchState)
-        {
+    private void updateLampState() {
+        if (firstSwitchState == secondSwitchState) {
             lampState = 0;
-        }
-        else
-        {
+        } else {
             lampState = 1;
         }
     }
@@ -91,10 +77,8 @@ public class HallwayLighting
 /**
  * Класс для тестирования системы управления освещением коридора.
  */
-class HallwayLightingTester
-{
-    public static void main(String[] args)
-    {
+class HallwayLightingTester {
+    public static void main(String[] args) {
         HallwayLighting lighting = new HallwayLighting();
 
         System.out.println("=== Система освещения коридора ===\n");
@@ -116,11 +100,9 @@ class HallwayLightingTester
         lighting.toggleFirstSwitch();
         printState(lighting);
 
-
         System.out.println("\n--- Второй выключатель опущен ---");
         lighting.toggleSecondSwitch();
         printState(lighting);
-
 
         System.out.println("\n=== Полная демонстрация всех состояний ===\n");
 
@@ -144,7 +126,6 @@ class HallwayLightingTester
         demo.toggleFirstSwitch();
         System.out.println("\nСостояние 5: Оба up (снова)");
         printState(demo);
-
 
         System.out.println("\n=== Симуляция реального коридора ===\n");
 
@@ -172,8 +153,7 @@ class HallwayLightingTester
     /**
      * Вспомогательный метод для вывода информации о состоянии системы.
      */
-    private static void printState(HallwayLighting lighting)
-    {
+    private static void printState(HallwayLighting lighting) {
         String firstState = lighting.getFirstSwitchState() == 0 ? "DOWN" : "UP";
         String secondState = lighting.getSecondSwitchState() == 0 ? "DOWN" : "UP";
         String lampState = lighting.getLampState() == 0 ? "OFF" : "ON";

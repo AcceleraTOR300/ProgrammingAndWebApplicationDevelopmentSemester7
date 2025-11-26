@@ -2,8 +2,7 @@
  * Заадние 6, улучшенный класс системы управления освещением коридора
  * с унифицированным интерфейсом для работы с выключателями.
  */
-public class HallwayLighting2
-{
+public class HallwayLighting2 {
     private int firstSwitchState;  // 0 = down, 1 = up
     private int secondSwitchState; // 0 = down, 1 = up
     private int lampState;         // 0 = off, 1 = on
@@ -12,8 +11,7 @@ public class HallwayLighting2
      * Конструктор создаёт систему с обоими выключателями в положении down
      * и выключенной лампой.
      */
-    public HallwayLighting2()
-    {
+    public HallwayLighting2() {
         firstSwitchState = 0;
         secondSwitchState = 0;
         lampState = 0;
@@ -21,46 +19,38 @@ public class HallwayLighting2
 
     /**
      * Возвращает состояние выключателя по номеру.
+     *
      * @param switchNum номер выключателя (1 или 2)
      * @return 0 если down, 1 если up, -1 если неправильный номер
      */
-    public int getSwitchState(int switchNum)
-    {
-        if (switchNum == 1)
-        {
+    public int getSwitchState(int switchNum) {
+        if (switchNum == 1) {
             return firstSwitchState;
-        }
-        else if (switchNum == 2)
-        {
+        } else if (switchNum == 2) {
             return secondSwitchState;
-        }
-        else
-        {
+        } else {
             return -1; // Ошибка: неправильный номер выключателя
         }
     }
 
     /**
      * Возвращает состояние лампы.
+     *
      * @return 0 если off, 1 если on
      */
-    public int getLampState()
-    {
+    public int getLampState() {
         return lampState;
     }
 
     /**
      * Переключает выключатель по номеру.
+     *
      * @param switchNum номер выключателя (1 или 2)
      */
-    public void toggleSwitch(int switchNum)
-    {
-        if (switchNum == 1)
-        {
+    public void toggleSwitch(int switchNum) {
+        if (switchNum == 1) {
             firstSwitchState = 1 - firstSwitchState;
-        }
-        else if (switchNum == 2)
-        {
+        } else if (switchNum == 2) {
             secondSwitchState = 1 - secondSwitchState;
         }
 
@@ -72,14 +62,10 @@ public class HallwayLighting2
      * Лампа включена (1), если выключатели в разных положениях,
      * лампа выключена (0), если в одинаковых положениях.
      */
-    private void updateLampState()
-    {
-        if (firstSwitchState == secondSwitchState)
-        {
+    private void updateLampState() {
+        if (firstSwitchState == secondSwitchState) {
             lampState = 0;
-        }
-        else
-        {
+        } else {
             lampState = 1;
         }
     }
@@ -88,10 +74,8 @@ public class HallwayLighting2
 /**
  * Класс CircuitTester для проверки всех комбинаций с новым интерфейсом.
  */
-class CircuitTester2
-{
-    public static void main(String[] args)
-    {
+class CircuitTester2 {
+    public static void main(String[] args) {
         System.out.println("=== Проверка всех комбинаций (новый интерфейс) ===\n");
 
         // Комбинация 1: DOWN-DOWN

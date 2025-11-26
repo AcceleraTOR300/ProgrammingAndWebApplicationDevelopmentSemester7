@@ -1,16 +1,14 @@
 /**
  * Задание 2, класс счётчика с ограничением по лимиту людей.
  */
-public class Counter2
-{
+public class Counter2 {
     private int value;
     private int limit;
 
     /**
      * Конструктор создаёт счётчик с начальным значением и без лимита.
      */
-    public Counter2(int initialValue)
-    {
+    public Counter2(int initialValue) {
         value = initialValue;
         limit = Integer.MAX_VALUE; // Без ограничения по умолчанию
     }
@@ -18,9 +16,7 @@ public class Counter2
     /**
      * Устанавливает максимальный лимит для счётчика.
      */
-    public void setLimit(int maximum)
-    {
-
+    public void setLimit(int maximum) {
         limit = maximum;
     }
 
@@ -28,10 +24,8 @@ public class Counter2
      * Нажимает кнопку счётчика, увеличивая значение на 1.
      * Если значение достигнет лимита, кнопка не будет иметь эффекта.
      */
-    public void click()
-    {
-        if (value < limit)
-        {
+    public void click() {
+        if (value < limit) {
             value = value + 1;
         }
     }
@@ -39,18 +33,14 @@ public class Counter2
     /**
      * Возвращает текущее значение счётчика.
      */
-    public int getValue()
-    {
-
+    public int getValue() {
         return value;
     }
 
     /**
      * Возвращает установленный лимит.
      */
-    public int getLimit()
-    {
-
+    public int getLimit() {
         return limit;
     }
 }
@@ -58,10 +48,8 @@ public class Counter2
 /**
  * Класс для тестирования счётчика с лимитом.
  */
-class Counter2Tester
-{
-    public static void main(String[] args)
-    {
+class Counter2Tester {
+    public static void main(String[] args) {
         Counter2 counter = new Counter2(0);
 
         System.out.println("=== Счётчик без лимита ===");

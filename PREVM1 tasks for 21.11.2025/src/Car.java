@@ -1,8 +1,7 @@
 /**
  * Задание 13, класс, в котором представляется автомобиль с определённым расходом топлива.
  */
-public class Car
-{
+public class Car {
     private double fuelConsumption; // литры на 100 км
     private double gasInTank;       // текущее количество топлива в баке
 
@@ -10,8 +9,7 @@ public class Car
      * Конструктор создаёт автомобиль с определённым расходом топлива.
      * Начальный уровень топлива равен 0.
      */
-    public Car(double consumption)
-    {
+    public Car(double consumption) {
         fuelConsumption = consumption;
         gasInTank = 0;
     }
@@ -19,18 +17,14 @@ public class Car
     /**
      * Добавляет топливо в топливный бак.
      */
-    public void addGas(double amount)
-    {
-
+    public void addGas(double amount) {
         gasInTank = gasInTank + amount;
     }
 
     /**
      * Возвращает текущее количество топлива в баке.
      */
-    public double getGasInTank()
-    {
-
+    public double getGasInTank() {
         return gasInTank;
     }
 
@@ -38,8 +32,7 @@ public class Car
      * Имитирует движение автомобиля на определённое расстояние.
      * Уменьшает количество бензина в топливном баке в зависимости от расстояния.
      */
-    public void drive(double distance)
-    {
+    public void drive(double distance) {
         double fuelNeeded = fuelConsumption * distance / 100;
         gasInTank = gasInTank - fuelNeeded;
     }
@@ -48,10 +41,8 @@ public class Car
 /**
  * Класс для тестирования класса Car.
  */
-class CarTester
-{
-    public static void main(String[] args)
-    {
+class CarTester {
+    public static void main(String[] args) {
         System.out.println("=== Задание 13: Тестирование класса Car ===\n");
 
         // Пример из задания
@@ -70,8 +61,7 @@ class CarTester
         System.out.println("  Ожидаемо: 40.0 л");
 
         System.out.println("\n" + "=".repeat(50));
-        if (gasLeft == 40.0)
-        {
+        if (gasLeft == 40.0) {
             System.out.println("Расчёт расхода топлива работает корректно!");
         }
         System.out.println("=".repeat(50));

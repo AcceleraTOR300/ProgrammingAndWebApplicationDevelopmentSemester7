@@ -1,25 +1,20 @@
 /**
  * Задание 1, попробовать реализвать класс счётчик с возможностью отмены последнего нажатия.
  */
-public class Counter
-{
+public class Counter {
     private int value;
 
     /**
      * Конструктор создаёт счётчик с начальным значением.
      */
-    public Counter(int initialValue)
-    {
-
+    public Counter(int initialValue) {
         value = initialValue;
     }
 
     /**
      * Нажимает кнопку счётчика, увеличивая значение на 1.
      */
-    public void click()
-    {
-
+    public void click() {
         value = value + 1;
     }
 
@@ -27,18 +22,14 @@ public class Counter
      * Нажимает кнопку отмены, уменьшая значение на 1.
      * Не может привести значение ниже нуля.
      */
-    public void undo()
-    {
-
+    public void undo() {
         value = Math.max(value - 1, 0);
     }
 
     /**
      * Возвращает текущее значение счётчика.
      */
-    public int getValue()
-    {
-
+    public int getValue() {
         return value;
     }
 }
@@ -46,10 +37,8 @@ public class Counter
 /**
  * Класс для тестирования класса Counter с методом undo.
  */
-class CounterTester
-{
-    public static void main(String[] args)
-    {
+class CounterTester {
+    public static void main(String[] args) {
         Counter counter = new Counter(0);
 
         System.out.println("Начальное значение: " + counter.getValue());
@@ -59,13 +48,11 @@ class CounterTester
         counter.click();
         System.out.println("После 3 нажатий click: " + counter.getValue());
 
-
         counter.undo();
         System.out.println("После 1 нажатия undo: " + counter.getValue());
 
         counter.undo();
         System.out.println("После 2 нажатия undo: " + counter.getValue());
-
 
         System.out.println("\n=== Тест защиты ===");
         counter.click();

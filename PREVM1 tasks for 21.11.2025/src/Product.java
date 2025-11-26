@@ -1,16 +1,14 @@
 /**
  * Задание 14, класс в котором представляется продукт с названием и ценой.
  */
-public class Product
-{
+public class Product {
     private String name;
     private double price;
 
     /**
      * Конструктор создаёт продукт с названием и ценой.
      */
-    public Product(String productName, double productPrice)
-    {
+    public Product(String productName, double productPrice) {
         name = productName;
         price = productPrice;
     }
@@ -18,26 +16,21 @@ public class Product
     /**
      * Возвращает название продукта.
      */
-    public String getName()
-    {
-
+    public String getName() {
         return name;
     }
 
     /**
      * Возвращает цену продукта.
      */
-    public double getPrice()
-    {
+    public double getPrice() {
         return price;
     }
 
     /**
      * Снижает цену продукта на заданную сумму.
      */
-    public void reducePrice(double amount)
-    {
-
+    public void reducePrice(double amount) {
         price = price - amount;
     }
 }
@@ -45,12 +38,9 @@ public class Product
 /**
  * Класс для печати информации о продуктах.
  */
-class ProductPrinter
-{
-    public static void main(String[] args)
-    {
+class ProductPrinter {
+    public static void main(String[] args) {
         System.out.println("=== Задание 14: Программа ProductPrinter ===\n");
-
 
         Product product1 = new Product("Тостер", 29.95);
         Product product2 = new Product("Микроволновая печь", 99.99);
@@ -59,20 +49,16 @@ class ProductPrinter
         System.out.println("  Продукт 1: " + product1.getName() + " - $" + product1.getPrice());
         System.out.println("  Продукт 2: " + product2.getName() + " - $" + product2.getPrice());
 
-
         System.out.println("\nСнижаем цены на $5.00...");
         product1.reducePrice(5);
         product2.reducePrice(5);
-
 
         System.out.println("\nЦены после снижения на $5.00:");
         System.out.println("  Продукт 1: " + product1.getName() + " - $" + product1.getPrice());
         System.out.println("  Продукт 2: " + product2.getName() + " - $" + product2.getPrice());
 
-
         System.out.println("\n" + "=".repeat(50));
         System.out.println("=== Дополнительные тесты ===\n");
-
 
         System.out.println("Тест 1: Несколько снижений цены подряд");
         Product book = new Product("Java книга", 49.99);
@@ -87,7 +73,6 @@ class ProductPrinter
         book.reducePrice(2);
         System.out.println("После снижения на $2.00: $" + book.getPrice());
         System.out.println("Ожидаемо: $39.99");
-
 
         System.out.println("\nТест 2: Разные продукты с разными ценами");
         Product pen = new Product("Ручка", 1.99);
@@ -108,7 +93,6 @@ class ProductPrinter
         System.out.println("  " + laptop.getName() + ": $" + laptop.getPrice());
         System.out.println("  " + notebook.getName() + ": $" + notebook.getPrice());
 
-
         System.out.println("\nТест 3: Полное тестирование всех методов");
         Product monitor = new Product("Монитор", 299.99);
 
@@ -122,7 +106,6 @@ class ProductPrinter
         System.out.println("  getPrice() вернул: $" + monitor.getPrice());
         System.out.println("  Ожидаемо: $279.99");
 
-
         System.out.println("\nТест 4: Граничные случаи");
         Product item1 = new Product("Дешёвый товар", 5.00);
         System.out.println("Исходная цена: $" + item1.getPrice());
@@ -130,7 +113,6 @@ class ProductPrinter
         item1.reducePrice(2.50);
         System.out.println("После снижения на $2.50: $" + item1.getPrice());
         System.out.println("Ожидаемо: $2.5");
-
 
         System.out.println("\n" + "=".repeat(50));
         System.out.println("=== Демонстрация ровно как в задании ===\n");
